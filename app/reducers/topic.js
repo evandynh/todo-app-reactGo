@@ -13,16 +13,6 @@ const topic = (
         completed: action.completed,
         text: action.text
       };
-    case types.INCREMENT_COUNT:
-      if (state.id === action.id) {
-        return { ...state, count: state.count + 1 };
-      }
-      return state;
-    case types.DECREMENT_COUNT:
-      if (state.id === action.id) {
-        return { ...state, count: state.count - 1 };
-      }
-      return state;
     case types.COMPLETED:
       if (state.id === action.id) {
         return { ...state, complete: state.complete = true };
@@ -52,9 +42,6 @@ const topics = (
       return state.filter(t => t.id !== action.id);
     case types.DESTROY_TOPIC:
       return state.filter(t => t.id !== action.id);
-    case types.INCREMENT_COUNT:
-    case types.DECREMENT_COUNT:
-      return state.map(t => topic(t, action));
     case types.COMPLETED:
       return state.map(t => topic(t, action));
     case types.NOT_COMPLETED:
