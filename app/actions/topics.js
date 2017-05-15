@@ -3,14 +3,6 @@ import md5 from 'spark-md5';
 import * as types from '../types';
 import { voteService } from '../services';
 
-function increment(id) {
-  return { type: types.INCREMENT_COUNT, id };
-}
-
-function decrement(id) {
-  return { type: types.DECREMENT_COUNT, id };
-}
-
 function complete(id) {
   return { type: types.COMPLETED, id };
 }
@@ -99,34 +91,6 @@ export function createTopic(text) {
       .catch(() => {
         return dispatch(createTopicFailure({ id, error: 'Oops! Something went wrong and we couldn\'t create your topic'}));
       });
-  };
-}
-
-export function incrementCount(id) {
-  return (dispatch) => {
-    return voteService().updateTopic({
-      id,
-      data: {
-        isFull: false,
-        isIncrement: true
-      }
-    })
-      .then(() => dispatch(increment(id)))
-      .catch(() => dispatch(createTopicFailure({id, error: 'Oops! Something went wrong and we couldn\'t add your vote'})));
-  };
-}
-
-export function decrementCount(id) {
-  return (dispatch) => {
-    return voteService().updateTopic({
-      id,
-      data: {
-        isFull: false,
-        isIncrement: false
-      }
-    })
-      .then(() => dispatch(decrement(id)))
-      .catch(() => dispatch(createTopicFailure({id, error: 'Oops! Something went wrong and we couldn\'t add your vote'})));
   };
 }
 
