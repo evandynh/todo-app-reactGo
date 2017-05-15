@@ -23,7 +23,7 @@ const About = () => {
       </div>
       <div className={cx('contribute')}>
         <p>Want to see more? Checkout his Github&nbsp;
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/evandynh">here</a>&nbsp;
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/evandynh/todo-app-reactGo">repo here</a>&nbsp;
         and Linkedin&nbsp;
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/evandynhoven/">here</a>!
         </p>

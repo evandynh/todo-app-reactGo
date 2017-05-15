@@ -19,7 +19,7 @@ _Formerly known as choonkending/react-webpack-node_
 [npm-link]: http://badge.fury.io/js/react-webpack-node
 
 
-#### Demo site: [**https://demo-reactgo.herokuapp.com/**](https://demo-reactgo.herokuapp.com/)
+#### Demo site: [**https://wildebeest-todos-list.herokuapp.com**](https://wildebeest-todos-list.herokuapp.com)
 
 ## Features:
 - ~~isomorphic~~ [**universal**](https://medium.com/@ghengeveld/isomorphism-vs-universal-javascript-4b47fb481beb#.4x2t3jlmx) Rendering
