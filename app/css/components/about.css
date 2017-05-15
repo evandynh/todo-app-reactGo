@@ -1,0 +1,29 @@
+@import '../common/typography';
+
+.about {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.header {
+  @apply --heading;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: rgba(0,0,0,.5);
+}
+
+img {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 2px 3px 11px #000;
+  }
+.description { @apply --normal; }
+.contribute { @apply --small; }

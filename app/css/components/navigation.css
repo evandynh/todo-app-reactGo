@@ -1,0 +1,22 @@
+@import '../common/colors';
+@import '../common/typography';
+
+.navigation {
+  padding: 0 28px;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px 32px;
+  color: var(--colorWhite);
+}
+
+.logo {
+  font-size: var(--fontHuge);
+}
+
+.active {
+  color: var(--colorWhite);
+}
